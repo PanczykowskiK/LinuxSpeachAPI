@@ -6,6 +6,7 @@ import fcntl
 import os
 import time
 import state
+import run_sarmata
 
 
 def int_or_str(text):
@@ -116,6 +117,8 @@ class recorder:
                     file.write(q.get())
                     # parser.exit(0)
                     print('\nRecording finished: ' + repr(args.filename))
+
+                    run_sarmata.RunSarmata(args.filename)
 
 
 
