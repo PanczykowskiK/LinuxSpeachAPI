@@ -1,0 +1,4 @@
+pyxhook
+sounddevice
+soundfile
+numpy
