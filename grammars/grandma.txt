@@ -1,0 +1,42 @@
+#ABNF 1.0;
+language pl-pl;
+mode voice;
+root $root;
+tag-format <semantics/1.0-literals>;
+
+
+
+$root = ($polecenie);
+
+
+$polecenie = $uruchom | $podg³oœnij | $œcisz | $wy³¹cz;
+
+  $uruchom = $notatnik | $odtwarzacz_muzyki | $wiersz_poleceñ;
+  $wy³¹cz = wy³¹cz {off_system};
+  $podg³oœnij = $o_ile
+  $œcisz = $o_ile
+  
+     $o_ile =  jeden {1} | dwa {2} | trzy {3} | cztery{4} | piêæ {5} | szeœæ {6} |
+               siedem {7} | osiem {8} | dziewiêæ {9} | dziesiêæ{10} |;
+
+     $odtwarzacz_muzyki = $wybierz | $wstrzymaj | $wznów | $podg³oœnij | $œcisz | $zamknij ;
+          $wstrzymaj = wstrzymaj {stop};
+          $wznów = odtwarzaj {start};
+          $wybierz = wybierz {choose};
+					$zamknij = zamknij {close};
+          
+     $notatnik = $pisz | $zapisz | $wstrzymaj | $zamknij ;
+      		$pisz = pisz {start};
+          $wstrzymaj = wstrzymaj {stop};
+          $zapisz = zapisz {save};
+          $zamknij = zamknij {close};
+     $wiersz_poleceñ = $zamknij ;
+      		$zamknij = zamknij {close};
+
+
+
+
+
+
+
+
