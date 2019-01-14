@@ -16,6 +16,8 @@ def print_results(responses, stream):
         print("Empty results - None object")
         return
 
+    recognized = None
+
     for response in responses:
         if response is None:
             print("Empty results - skipping response")
@@ -34,12 +36,14 @@ def print_results(responses, stream):
         if processing_completed:
             stream.close()
 
+
         n = 1
         for res in response.results:
             transcript = " ".join([word.transcript for word in res.words])
             print("[{}.] {} /{}/ ({})".format(n, transcript, res.semantic_interpretation, res.confidence))
             n += 1
-
+            recognized = transcript
+    return recognized
 
 def validate_recognition_settings(settings):
     if not settings.grammar_name and not settings.grammar:

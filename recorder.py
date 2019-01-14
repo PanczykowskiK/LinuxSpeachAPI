@@ -7,8 +7,10 @@ import os
 import time
 import state
 import run_sarmata
-
-
+import pyautogui
+import numpy as np
+import state
+import action
 def int_or_str(text):
     """Helper function for argument parsing."""
     try:
@@ -93,13 +95,17 @@ class recorder:
                 """This is called (from a separate thread) for each audio block."""
                 if status:
                     print(status, file=sys.stderr)
+
+
                 q.put(indata.copy())
+
+            #sd.CoreAudioSettings(conversion_quality='min')
 
             # Make sure the file is opened before recording anything:
             with sf.SoundFile(args.filename, mode='x', samplerate=44100,
                               channels=1, subtype='PCM_16') as file:
-                with sd.InputStream(samplerate=44100,
-                                    channels=1, callback=callback, dtype="int16", device='hw:1,0'):
+                with sd.InputStream(samplerate=44100, blocksize=128,
+                                    channels=1, callback=callback, dtype="int16", device='pulse'):
                     print('#' * 80)
                     print('press Ctrl+C to stop the recording')
                     print('#' * 80)
@@ -111,6 +117,7 @@ class recorder:
 
                     while True:
                         file.write(q.get())
+                        #print(q.get())
                         two = state.state.getInstance()
                         if two.status == False:
                             break
@@ -118,7 +125,10 @@ class recorder:
                     # parser.exit(0)
                     print('\nRecording finished: ' + repr(args.filename))
 
-                    run_sarmata.RunSarmata(args.filename)
+                    result = run_sarmata.RunSarmata(args.filename)
+                    print(result)
+                    action.action(result)
+
 
 
 

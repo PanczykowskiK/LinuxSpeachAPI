@@ -35,6 +35,7 @@ class SarmataArgs:
 
 
 def RunSarmata(path):
+    recognized = None
     wave_file = path
     grammar_file = "grammars/koncert.abnf"
     args = SarmataArgs(wave_file, grammar_file)
@@ -75,4 +76,5 @@ def RunSarmata(path):
             settings.set_session_id(session_id)
 
             results = recognizer.recognize(stream, settings)
-            print_results(results, stream)
+            recognized = print_results(results, stream)
+    return recognized

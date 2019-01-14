@@ -9,4 +9,4 @@ tag-format <semantics/1.0-literals>;
 $root = $polecenie <1-10>;
 
 
-$polecenie = uruchom | podgłośnij | ścisz | wstrzymaj | wznów | zablokuj;
+$polecenie = uruchom | podgłośnij | ścisz | wstrzymaj | wyłącz | komputer | zablokuj | jeden | wycisz | blank;

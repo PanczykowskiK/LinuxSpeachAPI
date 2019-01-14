@@ -18,3 +18,5 @@ google-cloud-speech
 googleapis-common-protos==1.5.3
 httplib2
 oauth2client
+pyautogui
+scipy

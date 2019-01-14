@@ -1,7 +1,10 @@
 class state:
     # Here will be the instance stored.
     __instance = None
+    state = False
     status = False
+    silence = 0
+    name = ""
     @staticmethod
     def getInstance():
         """ Static access method. """

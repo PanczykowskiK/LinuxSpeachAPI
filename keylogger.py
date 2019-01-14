@@ -1,4 +1,4 @@
-# Python code for keylogger
+#Python code for keylogger
 # to be used in linux
 import os
 import pyxhook
@@ -21,7 +21,8 @@ cancel_key = ord(
 
 #creating key pressing event and saving it into log file
 def OnKeyPress(event):
-		if event.Key == 'p':
+		print(event.Key)
+		if event.Key == 'Super_L':
 			one = recorder.recorder.getInstance()
 			two = state.state.getInstance()
 			if two.status:
