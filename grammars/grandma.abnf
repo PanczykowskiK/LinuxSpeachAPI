@@ -9,28 +9,26 @@ tag-format <semantics/1.0-literals>;
 $root = ($polecenie);
 
 
-$polecenie = $uruchom | $podg³oœnij | $œcisz | $wy³¹cz;
+$polecenie = $uruchom | $podgï¿½oï¿½nij | $ï¿½cisz | $wyï¿½ï¿½cz;
 
-  $uruchom = $notatnik | $odtwarzacz_muzyki | $wiersz_poleceñ;
-  $wy³¹cz = wy³¹cz {off_system};
-  $podg³oœnij = $o_ile
-  $œcisz = $o_ile
+  $uruchom = $notatnik | $odtwarzacz_muzyki | $wiersz_poleceï¿½;
+  $wyï¿½ï¿½cz = wyï¿½ï¿½cz {off_system};
+  $podgï¿½oï¿½nij = $o_ile
+  $ï¿½cisz = $o_ile
   
-     $o_ile =  jeden {1} | dwa {2} | trzy {3} | cztery{4} | piêæ {5} | szeœæ {6} |
-               siedem {7} | osiem {8} | dziewiêæ {9} | dziesiêæ{10} |;
+     $o_ile =  jeden {1} | dwa {2} | trzy {3} | cztery{4} | piï¿½ï¿½ {5} | szeï¿½ï¿½ {6} |
+               siedem {7} | osiem {8} | dziewiï¿½ï¿½ {9} | dziesiï¿½ï¿½{10} |;
 
-     $odtwarzacz_muzyki = $wybierz | $wstrzymaj | $wznów | $podg³oœnij | $œcisz | $zamknij ;
+     $odtwarzacz_muzyki = $wybierz | $wstrzymaj | $wznï¿½w | $podgï¿½oï¿½nij | $ï¿½cisz | $zamknij ;
           $wstrzymaj = wstrzymaj {stop};
-          $wznów = odtwarzaj {start};
+          $wznï¿½w = odtwarzaj {start};
           $wybierz = wybierz {choose};
 					$zamknij = zamknij {close};
           
      $notatnik = $pisz | $zapisz | $wstrzymaj | $zamknij ;
-      		$pisz = pisz {start};
-          $wstrzymaj = wstrzymaj {stop};
           $zapisz = zapisz {save};
           $zamknij = zamknij {close};
-     $wiersz_poleceñ = $zamknij ;
+     $wiersz_poleceï¿½ = $zamknij ;
       		$zamknij = zamknij {close};
 
 

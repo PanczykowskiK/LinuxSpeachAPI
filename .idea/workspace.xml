@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f56c3db9-5c8d-4afe-8ff6-44c01fac1920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.directory" beforeDir="false" afterPath="$PROJECT_DIR$/.directory" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action.py" beforeDir="false" afterPath="$PROJECT_DIR$/action.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammars/grandma.abnf" beforeDir="false" afterPath="$PROJECT_DIR$/grammars/grandma.abnf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,88 +33,69 @@
     <expand />
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="326245165">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="abnf" value="1" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="abnf" value="74" />
+          <entry key="py" value="663" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="Python" value="663" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/action.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recorder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/audio_detector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1355">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_sarmata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-              <folding>
-                <element signature="e#47#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sarmata/sarmata_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="126" column="39" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
-              <folding>
-                <element signature="e#47#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sarmata/service/sarmata_recognize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#84#149#0" />
+                <element signature="e#196#1077#0" />
+                <element signature="e#1119#1996#0" />
+                <element signature="e#1813#1891#0" />
+                <element signature="e#1926#1996#0" />
+                <element signature="e#416#489#0" />
+                <element signature="e#2190#2247#0" />
+                <element signature="e#2310#2367#0" />
+                <element signature="e#2437#2643#0" />
+                <element signature="e#2715#2846#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grammars/koncert.abnf">
+        <entry file="file://$PROJECT_DIR$/grammars/grandma.abnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="109" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
+            <state relative-caret-position="493">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -147,15 +128,17 @@
         <option value="$PROJECT_DIR$/keylogger.py" />
         <option value="$PROJECT_DIR$/recorder.py" />
         <option value="$PROJECT_DIR$/grammars/koncert.abnf" />
-        <option value="$PROJECT_DIR$/action.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/run_dictation.py" />
         <option value="$PROJECT_DIR$/audio_detect_stream.py" />
         <option value="$PROJECT_DIR$/audio_detector.py" />
+        <option value="$PROJECT_DIR$/venv2/action.py" />
+        <option value="$PROJECT_DIR$/grammars/grandma.abnf" />
+        <option value="$PROJECT_DIR$/action.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="956" />
     <option name="width" value="964" />
     <option name="height" value="1044" />
@@ -172,6 +155,11 @@
             <path>
               <item name="LinuxSpeachAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="LinuxSpeachAPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinuxSpeachAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinuxSpeachAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="grammars" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,9 +352,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16915688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1691254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,6 +406,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -435,30 +427,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../spechrec/tm-clients/address_provider.py" />
-    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/_pyautogui_x11.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="246" column="87" selection-start-line="246" selection-start-column="87" selection-end-line="246" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/_pyautogui_osx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15210">
-          <caret line="1014" column="20" selection-start-line="1014" selection-start-column="20" selection-end-line="1014" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/_pyautogui_x11.py" />
+    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/_pyautogui_osx.py" />
+    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/pyautogui/__init__.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/queue.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -466,13 +437,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/multiprocessing/queues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3.6/multiprocessing/queues.py" />
     <entry file="file://$PROJECT_DIR$/state.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -480,30 +445,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/sounddevice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22440">
-          <caret line="1501" column="13" selection-start-line="1501" selection-start-column="8" selection-end-line="1501" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../organista/Organista_python/text_display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/soundfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="524" column="36" selection-start-line="524" selection-start-column="36" selection-end-line="524" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/sounddevice.py" />
+    <entry file="file://$USER_HOME$/organista/Organista_python/text_display.py" />
+    <entry file="file://$PROJECT_DIR$/venv2/lib/python3.6/site-packages/soundfile.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -532,30 +476,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grammars/cyfry.abnf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grammars/koncert.abnf">
+    <entry file="file://$PROJECT_DIR$/grammars/cyfry.abnf" />
+    <entry file="file://$PROJECT_DIR$/grammars/koncert.abnf" />
+    <entry file="file://$PROJECT_DIR$/dictation_client.py" />
+    <entry file="file://$PROJECT_DIR$/audio_detect_stream.py" />
+    <entry file="file://$PROJECT_DIR$/run_dictation.py" />
+    <entry file="file://$PROJECT_DIR$/audio_detector.py" />
+    <entry file="file://$PROJECT_DIR$/recorder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="109" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dictation_client.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="2057">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sarmata/sarmata_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="126" column="39" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
+        <state relative-caret-position="1989">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="e#47#82#0" expanded="true" />
           </folding>
@@ -564,65 +504,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sarmata/service/sarmata_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="1241">
           <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio_detect_stream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="157" column="85" selection-start-line="157" selection-start-column="85" selection-end-line="157" selection-end-column="85" />
-          <folding>
-            <element signature="e#86#101#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_dictation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#38#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/venv2/action.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/run_sarmata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+        <state relative-caret-position="627">
+          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
           <folding>
             <element signature="e#47#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audio_detector.py">
+    <entry file="file://$PROJECT_DIR$/grammars/grandma.abnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1355">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="493">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#84#149#0" />
+            <element signature="e#196#1077#0" />
+            <element signature="e#1119#1996#0" />
+            <element signature="e#1813#1891#0" />
+            <element signature="e#1926#1996#0" />
+            <element signature="e#416#489#0" />
+            <element signature="e#2190#2247#0" />
+            <element signature="e#2310#2367#0" />
+            <element signature="e#2437#2643#0" />
+            <element signature="e#2715#2846#0" />
+          </folding>
         </state>
       </provider>
     </entry>
