@@ -113,7 +113,7 @@ try:
                     data2 = q2.get()
                     file.write(data2)
                     try:
-                        if int(10 * np.log10(np.sqrt(np.mean((data2 / 65535) ** 2)))) < -20:
+                        if int(10 * np.log10(np.sqrt(np.mean((data2 / 65535) ** 2)))) < -15:
                             print("stoprecording: " + filename)
                             one = state.state.getInstance()
                             one.state = False

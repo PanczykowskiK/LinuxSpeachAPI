@@ -23,3 +23,8 @@ import os
 str = 'hello wworld i am  23'
 h = str.split()
 print(h)
+
+import datetime
+now = datetime.datetime.now()
+print(now.hour, now.minute)
+

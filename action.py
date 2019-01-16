@@ -23,11 +23,26 @@ def action(str):
                     subprocess.Popen('chromium', stdout=subprocess.PIPE)
                 elif "terminal" in words[1]:
                     subprocess.Popen('konsole', stdout=subprocess.PIPE)
+                elif "music" in words[1]:
+                    subprocess.Popen('konsole', stdout=subprocess.PIPE)
+                elif "files" in words[1]:
+                    if "home" in words[2]:
+                        subprocess.Popen('dolphin ~', stdout=subprocess.PIPE)
+                    else:
+                        subprocess.Popen('dolphin {}.format()', stdout=subprocess.PIPE)
+                elif "efx" in words[1]:
+                    subprocess.Popen('pulseeffects', stdout=subprocess.PIPE)
             elif "stop" in words[0]:
                 if "web" in words[1]:
                     os.popen("killall chromium")
                 elif "terminal" in words[1]:
                     os.popen('killall konsole', stdout=subprocess.PIPE)
+            elif "ctrl+a" in words[0]:
+                pyautogui.hotkey('ctrl', 'a')
+            elif "back" in words[0]:
+                pyautogui.hotkey('ctrl', 'z')
+            elif "print" in words[0]:
+                pyautogui.hotkey('ctrl', 'p')
 
         except:
             print("repeat")

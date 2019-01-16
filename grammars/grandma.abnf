@@ -15,8 +15,10 @@ $polecenie = (uruchom | włącz){start}  $co | (zamknij | wyłącz){stop} $co | 
 
 zresetuj  (głośność | dźwięk) {volume_reset } | (w górę | wyżej){page_up} | (w dół | niżej){page_down} |
 
-(oddaj myszkę | myszka) {mouse} | cofnij {back} | (zapisz | zachowaj) {save} | (wydrukuj | do drukarki){print};
+cofnij {back} | (zapisz | zachowaj) {save} | (wydrukuj | do drukarki){print};
 
-$co = edytor tekstu {text} | odtwarzacz muzyki{music} | (wiersz poleceń | terminal | konsole){terminal} | przeglądarkę{web} | przeglądarkę plików{files} | wifi{net}  | effekty{efx} ;
+$co = edytor tekstu {text} | odtwarzacz muzyki{music} | (wiersz poleceń | terminal | konsole){terminal} | przeglądarkę{web} | przeglądarkę plików{files}  $gdzie | effekty{efx} ;
+
+$gdzie = (domowy | katalog domowy | mój folder){home};
 
 $o_ile = jeden{1} | dwa{2} | trzy{3} | cztery{4} | pięć {5};
