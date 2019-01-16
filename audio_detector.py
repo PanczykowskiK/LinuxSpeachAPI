@@ -113,30 +113,17 @@ try:
                     data2 = q2.get()
                     file.write(data2)
                     try:
-                        level = int(10 * np.log10(np.sqrt(np.mean((data2 / 65535) ** 2))))
-                        if level > -20:
-                            silence = 0
-                        #elif silence < 250:
-                            #silence += 1
-                        else:
-                            silence = 0
+                        if int(10 * np.log10(np.sqrt(np.mean((data2 / 65535) ** 2)))) < -20:
                             print("stoprecording: " + filename)
                             one = state.state.getInstance()
                             one.state = False
-
-
                             break
                     except:
                         None
-
                 if counter < 5:
                     result = run_sarmata.RunSarmata(filename)
                     action.action(result)
-
-
                 else:
-
-
                     args = DictationArgs(filename)
                     args.mic = True
 
@@ -148,6 +135,8 @@ try:
                                 print('Recognizing...')
                                 results = recognizer.recognize(stream)
                                 print_results(results)
+                                import pyautogui
+                                pyautogui.typewrite((str(results[0]['transcript'])))
 
 
     recording = False
@@ -161,7 +150,6 @@ try:
             try:
                 level = np.sqrt(np.mean((data/65535) **2))
                 if level > 0.06:
-
                     filename = "records/" + str(time.time()) + ".wav"
                     t = threading.Thread(target=record, args={filename})
                     t.start()

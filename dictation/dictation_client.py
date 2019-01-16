@@ -19,7 +19,6 @@ def print_results(results):
                     print("{} [{}.{:02d} - {}.{:02d}]".format(words[i], time[0].seconds, int(time[0].nanos / 10000000),
                                                           time[1].seconds, int(time[1].nanos / 10000000)))
 
-
 def create_audio_stream(args):
     # create wave file stream
     if args.wave is not None:

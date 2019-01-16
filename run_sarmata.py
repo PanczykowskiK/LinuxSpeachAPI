@@ -37,7 +37,7 @@ class SarmataArgs:
 def RunSarmata(path):
     recognized = None
     wave_file = path
-    grammar_file = "grammars/koncert.abnf"
+    grammar_file = "grammars/grandma.abnf"
     args = SarmataArgs(wave_file, grammar_file)
 
     settings = SarmataSettings()

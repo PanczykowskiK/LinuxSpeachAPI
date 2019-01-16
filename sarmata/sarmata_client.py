@@ -42,7 +42,7 @@ def print_results(responses, stream):
             transcript = " ".join([word.transcript for word in res.words])
             print("[{}.] {} /{}/ ({})".format(n, transcript, res.semantic_interpretation, res.confidence))
             n += 1
-            recognized = transcript
+            recognized = res.semantic_interpretation
     return recognized
 
 def validate_recognition_settings(settings):

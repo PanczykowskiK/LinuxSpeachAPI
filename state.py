@@ -7,15 +7,13 @@ class state:
     name = ""
     @staticmethod
     def getInstance():
-        """ Static access method. """
-        if state.__instance == None:
+        if state.__instance is None:
             state()
 
         return state.__instance
 
     def __init__(self):
-        """ Virtually private constructor. """
-        if state.__instance != None:
+        if state.__instance is not None:
             raise Exception("This class is a singleton!")
         else:
             state.__instance = self
