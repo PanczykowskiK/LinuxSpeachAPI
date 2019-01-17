@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Show a text-mode spectrogram using live microphone data."""
+
 import argparse
 import math
 import numpy as np
@@ -69,10 +69,7 @@ parser.add_argument('-r', '--range', type=float, nargs=2,
                     help='frequency range (default %(default)s Hz)')
 args = parser.parse_args()
 
-def rms(data):
-    try:
-        return int( 10* np.log10(np.mean(abs(data / 65535) ** 2)))
-    except: return -100
+
 
 try:
     import sounddevice as sd
