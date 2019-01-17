@@ -1,9 +1,7 @@
 class state:
-    # Here will be the instance stored.
+    # Here will be the status of recording stored.
     __instance = None
     state = False
-    status = False
-    silence = 0
     name = ""
     @staticmethod
     def getInstance():
