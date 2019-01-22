@@ -96,6 +96,8 @@ def action(str):
                 pyautogui.hotkey('down')
             elif "print" in words[0]:
                 pyautogui.hotkey('ctrl', 'p')
+            elif "change_desktop" in words[0]:
+                pyautogui.hotkey('ctrl', 'alt', 'pageup')
             elif "Visual Studio Code" in active_window:
                 if "new_file" in words[0]:
                     pyautogui.hotkey('ctrl', 'n')

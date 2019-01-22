@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f56c3db9-5c8d-4afe-8ff6-44c01fac1920" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/get_active_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kivy_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testtsatasdt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/action.py" beforeDir="false" afterPath="$PROJECT_DIR$/action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grammars/grandma.abnf" beforeDir="false" afterPath="$PROJECT_DIR$/grammars/grandma.abnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records/.directory" beforeDir="false" afterPath="$PROJECT_DIR$/records/.directory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_sarmata.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_sarmata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv2/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +16,7 @@
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$audio_detector.coverage" NAME="audio_detector Coverage Results" MODIFIED="1547830040556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$keylogger.coverage" NAME="keylogger Coverage Results" MODIFIED="1547373970465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$recorder.coverage" NAME="recorder Coverage Results" MODIFIED="1547373977254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LinuxSpeachAPI$kivy_window.coverage" NAME="kivy_window Coverage Results" MODIFIED="1548193624968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LinuxSpeachAPI$kivy_window.coverage" NAME="kivy_window Coverage Results" MODIFIED="1548193991243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$testtsatasdt.coverage" NAME="testtsatasdt Coverage Results" MODIFIED="1548192385060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$audio_detect_stream.coverage" NAME="audio_detect_stream Coverage Results" MODIFIED="1547572213491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LinuxSpeachAPI$test.coverage" NAME="test Coverage Results" MODIFIED="1547899247342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -47,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grammars/grandma.abnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="88" column="118" lean-forward="true" selection-start-line="88" selection-start-column="118" selection-end-line="88" selection-end-column="118" />
+            <state relative-caret-position="340">
+              <caret line="69" column="116" selection-start-line="69" selection-start-column="116" selection-end-line="69" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -65,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/action.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="95" column="38" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+            <state relative-caret-position="406">
+              <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -162,8 +152,8 @@
         <option value="$PROJECT_DIR$/state.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/testtsatasdt.py" />
-        <option value="$PROJECT_DIR$/action.py" />
         <option value="$PROJECT_DIR$/grammars/grandma.abnf" />
+        <option value="$PROJECT_DIR$/action.py" />
       </list>
     </option>
   </component>
@@ -386,12 +376,12 @@
       <workItem from="1548090553387" duration="5243000" />
       <workItem from="1548104077165" duration="597000" />
       <workItem from="1548148285373" duration="22000" />
-      <workItem from="1548149213020" duration="22294000" />
+      <workItem from="1548149213020" duration="22579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131578000" />
+    <option name="totallyTimeSpent" value="131863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,20 +665,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action.py">
+    <entry file="file://$PROJECT_DIR$/grammars/grandma.abnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="95" column="38" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="69" column="116" selection-start-line="69" selection-start-column="116" selection-end-line="69" selection-end-column="116" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grammars/grandma.abnf">
+    <entry file="file://$PROJECT_DIR$/action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="88" column="118" lean-forward="true" selection-start-line="88" selection-start-column="118" selection-end-line="88" selection-end-column="118" />
+        <state relative-caret-position="406">
+          <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -67,7 +67,7 @@ $cancel = (anuluj | wyjdź){cancel};
 
 $usun = (usuń |usuń to | pozbądź się tego | wykasuj |wykasuj to | wyczyść){delete};
 
-$screen = ($w_dol | $w_gorę | przejdz $na_dol | $na_dol | $na_gore | $zrzut_ekranu);
+$screen = ($w_dol | $w_gorę | przejdz $na_dol | $na_dol | $na_gore | $zrzut_ekranu | przełącz pulpit{change_desktop}) ;
 
 $w_dol = (niżej | przewiń w dół){page_down};
 
