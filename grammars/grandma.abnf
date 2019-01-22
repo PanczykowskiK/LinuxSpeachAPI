@@ -6,19 +6,84 @@ tag-format <semantics/1.0-literals>;
 
 
 
-$root = ($polecenie);
+$root = ( $odtwarzacz_muzyki | $przegladarka | $edytor_tekstu | $ogolne | $arrows);
 
 
-$polecenie = (uruchom | włącz){start}  $co | (zamknij | wyłącz){stop} $co | (wycisz | cisza | włącz dźwięk){wycisz} |
+$odtwarzacz_muzyki = ( $play | $zmien_utwor );
 
-(wstrzymaj | zatrzymaj){stop} | (podgłośnij o){podgłośnij} $o_ile | (ścisz o){ścisz} $o_ile | zaznacz wszystko{ctrl+a} |
+$play = (zatrzymaj odtwarzanie | wstrzymaj odtwarzanie | wznów odtwarzanie | odtwarzaj ){audio_play};
 
-zresetuj  (głośność | dźwięk) {volume_reset } | (w górę | wyżej){page_up} | (w dół | niżej){page_down} |
+$zmien_utwor = ( następny utwór | następna (ścieżka | piosenka)){audio_next} |  (poprzedni utwór | poprzednia (ścieżka | piosenka )){audio_prev};
 
-cofnij {back} | (zapisz | zachowaj) {save} | (wydrukuj | do drukarki){print};
 
-$co = edytor tekstu {text} | odtwarzacz muzyki{music} | (wiersz poleceń | terminal | konsole){terminal} | przeglądarkę{web} | przeglądarkę plików{files}  $gdzie | effekty{efx} ;
 
-$gdzie = (domowy | katalog domowy | mój folder){home};
+$edytor_tekstu = ( $nowy_dokument | $zapisz_dokument  | $zamknij_dokument ) ;
 
-$o_ile = jeden{1} | dwa{2} | trzy{3} | cztery{4} | pięć {5};
+$nowy_dokument = (utwórz nowy dokument | nowy dokument | nowy tekst ){new_file};
+
+$zapisz_dokument = (zapisz | zachowaj){save_file} | (zapisz jako (nowy | kopię) | zachowaj jako (nowy | kopię)  ){save_as_new_file};
+
+$zamknij_dokument = (zamknij tekst | zamknij dokument){close_file};
+
+
+
+$przegladarka = ($nowa_karta | $zamknij_karte | $poprzednia_strona | $następna_strona | $wyszukaj | $przywroc_karte | $przelacz_karte | odświerz{refresh});
+
+$nowa_karta = (nowa karta | otwórz nową kartę){cart_new};
+
+$zamknij_karte = (zamknij kartę | opuść kartę){cart_close};
+
+$poprzednia_strona = (poprzednia strona | cofnij stronę){site_prev};
+
+$następna_strona =(następna strona | strona dalej){site_next};
+
+$wyszukaj = (wyszukaj | znajdź ){web_search};
+
+$przywroc_karte =((otwórz | przywróć ) (zamkniętą | opuszczoną )  (kartę | stronę)){cart_restore};
+
+$przelacz_karte = (przełącz na kartę | idź do karty) {cart_go} $ktora_karta;
+
+$ktora_karta = (pierwszą | pierwszej) {1} | (drugą |  drugiej) {2} | (trzecią | trzeciej){3} | (czwartą | czwartej){4}| (piątą | piątej){5}|
+
+    (szóstą |szóstej){6}| (siódmą| siódmej){7}| (ósmą| ósmej) {8}| (ostatnią| ostatniej) {last_one};
+
+
+
+$ogolne = $start | $zamknij | $tekst | $audio | $screen | $arrows;
+
+$start = ( uruchom | włącz){start_app} $co;
+
+$zamknij = (zamknij | zatrzymaj | wyłącz){close_app} $co | (zamknij | zatrzymaj | wyłącz) okno {close_app} ;
+
+$co = (przeglądarkę internetową | przeglądarkę | internet ){web} | (edytor tekstu | notatnik | tekst){text} | (odtwarzacz muzyki | muzykę){music} | (przeglądarkę plików){files} |(przeglądarkę plików){files} $gdzie | (konsolę | terminal){konsole};
+
+$gdzie =  dokumenty{docs} | muzyka {music} | pulpit{desktop};
+
+$tekst = cofnij {back} | dalej {next}  | ( zaznacz | zaznacz wszystko) {mark_all} | wytnij {cut} | kopiuj {copy} | wklej {paste}  | $enter | $cancel | $usuń | (drukuj | do drukarki){print} ;
+
+$enter = (akceptuj | wejdź | enter){enter};
+
+$cancel = (anuluj | wyjdź){cancel};
+
+$usun = (usuń |usuń to | pozbądź się tego | wykasuj |wykasuj to | wyczyść){delete};
+
+$screen = ($w_dol | $w_gorę | przejdz $na_dol | $na_dol | $na_gore | $zrzut_ekranu);
+
+$w_dol = (niżej | przewiń w dół){page_down};
+
+$w_gorę = (wyżej | przewiń w górę){page_up};
+
+$na_dol = (na sam dół | na koniec | na dół | na sam koniec){end};
+
+$na_gore = (na samą górę | na początek | na górę |  na samą górę | do góry){home};
+
+$zrzut_ekranu = (zrzut ekranu | zdjęcie | migawka){print_screen};
+
+$audio = (podgłośnij | zwiększ głośność){volume_up} o $ile_db | (ścisz | zmniejsz głośność){volume_down} o $ile_db |
+    (wycisz | przełącz wyciszenie | włącz dźwięk){mute} | (zresetuj (dźwięk | audio)){audio_reset};
+
+$ile_db = jeden{1} | dwa{2}| trzy {3}| cztery{4} | pięć {5}| sześć {6}| dziesięć {10}| piętnaście {15}| dwadzieścia {20}|
+    trzydzieści {30}| czterdzieści {40}|pięćdziesiąt {50}| sześćdziesiąt{60};
+
+
+$arrows = (następna | następny| prawo){right} | (poprzednia | lewo |poprzedni){left} | góra {up} | znak w  dół {down};

@@ -117,6 +117,7 @@ try:
                             break
                     except:
                         None
+
                 if counter < 5:
                     result = run_sarmata.RunSarmata(filename)
                     action.action(result)

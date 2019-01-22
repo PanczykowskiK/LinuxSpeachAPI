@@ -17,7 +17,8 @@ class SarmataArgs:
     max_alternatives = 1               # Maximum number of recognition hypotheses to be returned.
     mic = False                         # Use microphone as an audio source (instead of wave file).
     no_input_timeout = 5000             # MRCP v2 no input timeout [ms].
-    no_match_threshold = 0.2            # Confidence acceptance threshold.
+    no_match_threshold = 0.5
+    # Confidence acceptance threshold.
     recognition_timeout = 10000         # MRCP v2 recognition timeout [ms].
     session_id = None                   # Session ID to be passed to the service. If not specified, the service will generate a default session ID itself.
     service_settings = None             # Semicolon-separated list of key=value pairs defining settings to be sent to service via gRPC request.
