@@ -29,7 +29,7 @@ $zamknij_dokument = (zamknij tekst | zamknij dokument){close_file};
 
 $przegladarka = ($nowa_karta | $zamknij_karte | $poprzednia_strona | $następna_strona | $wyszukaj | $przywroc_karte | $przelacz_karte | odświerz{refresh});
 
-$nowa_karta = (nowa karta | otwórz nową kartę){cart_new};
+$nowa_karta = (nowa karta | otwórz nową kartę){cart_new} | strona domowa {home_website};
 
 $zamknij_karte = (zamknij kartę | opuść kartę){cart_close};
 
@@ -39,7 +39,7 @@ $następna_strona =(następna strona | strona dalej){site_next};
 
 $wyszukaj = (wyszukaj | znajdź ){web_search};
 
-$przywroc_karte =((otwórz | przywróć ) (zamkniętą | opuszczoną )  (kartę | stronę)){cart_restore};
+$przywroc_karte =((otwórz | przywróć ) (zamkniętą | opuszczoną )  (karte | kartę | stronę | strone)){cart_restore};
 
 $przelacz_karte = (przełącz na kartę | idź do karty) {cart_go} $ktora_karta;
 
@@ -59,7 +59,7 @@ $co = (przeglądarkę internetową | przeglądarkę | internet ){web} | (edytor 
 
 $gdzie =  dokumenty{docs} | muzyka {music} | pulpit{desktop};
 
-$tekst = cofnij {back} | dalej {next}  | ( zaznacz | zaznacz wszystko) {mark_all} | wytnij {cut} | kopiuj {copy} | wklej {paste}  | $enter | $cancel | $usuń | (drukuj | do drukarki){print} ;
+$tekst = cofnij {back} | dalej {nextt}  | ( zaznacz | zaznacz wszystko) {mark_all} | wytnij {cut} | kopiuj {copy} | (wklej | wklej tutaj) {paste}  | $enter | $cancel | $usun | (drukuj | do drukarki){print} ;
 
 $enter = (akceptuj | wejdź | enter){enter};
 
@@ -67,7 +67,7 @@ $cancel = (anuluj | wyjdź){cancel};
 
 $usun = (usuń |usuń to | pozbądź się tego | wykasuj |wykasuj to | wyczyść){delete};
 
-$screen = ($w_dol | $w_gorę | przejdz $na_dol | $na_dol | $na_gore | $zrzut_ekranu | przełącz pulpit{change_desktop}) ;
+$screen = ($w_dol | $w_gorę | przejdz $na_dol | $na_dol | $na_gore | $zrzut_ekranu | przełącz pulpit{change_desktop} | przełącz aktywne okno{change_window});
 
 $w_dol = (niżej | przewiń w dół){page_down};
 
@@ -80,10 +80,10 @@ $na_gore = (na samą górę | na początek | na górę |  na samą górę | do g
 $zrzut_ekranu = (zrzut ekranu | zdjęcie | migawka){print_screen};
 
 $audio = (podgłośnij | zwiększ głośność){volume_up} o $ile_db | (ścisz | zmniejsz głośność){volume_down} o $ile_db |
-    (wycisz | przełącz wyciszenie | włącz dźwięk){mute} | (zresetuj (dźwięk | audio)){audio_reset};
+    (wycisz | przełącz wyciszenie | włącz dźwięk){mute} | (zresetuj (głośność | dźwięk | audio)){audio_reset};
 
 $ile_db = jeden{1} | dwa{2}| trzy {3}| cztery{4} | pięć {5}| sześć {6}| dziesięć {10}| piętnaście {15}| dwadzieścia {20}|
     trzydzieści {30}| czterdzieści {40}|pięćdziesiąt {50}| sześćdziesiąt{60};
 
 
-$arrows = (następna | następny| prawo){right} | (poprzednia | lewo |poprzedni){left} | góra {up} | znak w  dół {down};
+$arrows = (następna | następny| prawo){right} | (poprzednia | lewo |poprzedni){left} | góra {up} | (znak | strzalka | kierunek) w  dół {down};

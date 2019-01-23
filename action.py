@@ -9,6 +9,7 @@ def action(str):
             Notification("LinuxSpeachAPI", str)
             words = str.split()
             active_window = get_active_window.get_active_window_title().decode('utf-8')
+            print(active_window)
             if "audio_play" in words[0]:
                 os.popen("xdotool key XF86AudioPlay")
             elif "audio_next" in words[0]:
@@ -27,24 +28,26 @@ def action(str):
                     elif "files" in words[1]:
                         if len(words)>2:
                             if "docs" in words[2]:
-                                os.popen("dolphin OneDrive")
+                                os.popen("dolphin ~/OneDrive")
                             elif "music" in words[2]:
-                                os.popen("dolphin Music")
+                                os.popen("dolphin ~/Music")
                             elif "music" in words[2]:
-                                os.popen("dolphin Desktop")
+                                os.popen("dolphin ~/Desktop")
                         else:
                             os.popen("dolphin")
 
             elif "close_app" in words[0]:
                 if len(words) == 1:
                     if not ( "Konsole" in active_window or "LinuxSpeachAPI" in active_window):
-                        None
-                    else:
                         os.popen("xdotool getactivewindow windowclose")
                 else:
                     if "web" in words[1]:
                         os.popen("killall chromium")
+                        os.popen("killall chromium")
+                        os.popen("killall chromium")
                     elif "text" in words[1]:
+                        os.popen("killall /opt/visual-studio-code/code")
+                        os.popen("killall /opt/visual-studio-code/code")
                         os.popen("killall /opt/visual-studio-code/code")
                     elif "music" in words[1]:
                         os.popen("killall amarok")
@@ -52,7 +55,7 @@ def action(str):
                         os.popen("killall dolphin")
             elif "back" in words[0]:
                 pyautogui.hotkey('ctrl', 'z')
-            elif "next" in words[0]:
+            elif "nextt" in words[0]:
                 pyautogui.hotkey('ctrl', 'shift', 'z')
             elif "mark_all" in words[0]:
                 pyautogui.hotkey('ctrl', 'a')
@@ -94,10 +97,15 @@ def action(str):
                 pyautogui.hotkey('up')
             elif "down" in words[0]:
                 pyautogui.hotkey('down')
+            elif "print_screen" in words[0]:
+                os.popen('spectacle')
             elif "print" in words[0]:
                 pyautogui.hotkey('ctrl', 'p')
             elif "change_desktop" in words[0]:
                 pyautogui.hotkey('ctrl', 'alt', 'pageup')
+            elif "Niezapisane*" in active_window:
+                if "save_file" in words[0]:
+                    pyautogui.hotkey('ctrl', 's')
             elif "Visual Studio Code" in active_window:
                 if "new_file" in words[0]:
                     pyautogui.hotkey('ctrl', 'n')
@@ -119,6 +127,7 @@ def action(str):
                 elif "site_prev" in words[0]:
                     pyautogui.hotkey('alt', 'left')
                 elif "site_next" in words[0]:
+                    print("action")
                     pyautogui.hotkey('alt', 'right')
                 elif "web_search" in words[0]:
                     pyautogui.hotkey('ctrl', 'k')
@@ -126,6 +135,8 @@ def action(str):
                     pyautogui.hotkey('ctrl', 'shift',  't')
                 elif "refresh" in words[0]:
                     pyautogui.hotkey('ctrl', "f5")
+                elif "home_website" in words[0]:
+                    pyautogui.hotkey('alt', "home")
                 elif "cart_go" in words[0]:
                     if len(words) > 1:
                         if 'last_one' in words[1]:
